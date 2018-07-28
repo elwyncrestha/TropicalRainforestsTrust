@@ -1,0 +1,672 @@
+/* css document */
+
+/* root styles */
+* {
+	margin: 0;
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+body {
+	background-color: #715050;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-underline {
+	text-decoration: underline;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.container {
+	margin: 20px 3.66%;
+}
+.black-text {
+	color: #000000;
+}
+.white-text {
+	color: #ffffff;
+}
+.bg-white
+{
+	background-image: none;
+	background-color: #ffffff;
+}
+/*** for mozilla fieldset legend ***/
+fieldset>legend {
+  display: table;
+  float: none;
+  margin: 0 auto;
+}
+/* FF only */
+@media screen and (-moz-images-in-menus: 0) {
+  fieldset {
+    position: relative;
+  }
+  fieldset>legend {
+    position: absolute;
+    left: 50%;
+    top: -12px; /* depends on font size and border */
+    background: white; /* depends on background */
+    transform: translate(-50%, 0);
+  }
+}
+/*********************************** site styles **********************************/
+/***************************** nav section *********************************/
+.vertical-nav hr {
+	border-color: #999999;
+}
+.vertical-nav h1, .vertical-nav h2, .vertical-nav h3, .vertical-nav h4, .vertical-nav h5, .vertical-nav h6 {
+	color: #999999;
+}
+.vertical-nav>h1 {
+	font-size: 24px;
+}
+.vertical-nav {
+	/*	background: #1d1312;*/
+	background-image: url("Images/gradientTry.jpeg");
+	float: left;
+	height: 100%;
+	width: 20%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+.nav-li-active {
+	background-color: #533b3b;
+}
+#content-logo {
+	margin: 30px 20px;
+	text-align: center;
+}
+.vertical-nav>#content-logo>img {
+	width: 75px;
+	height: 75px;
+}
+#website-owner {
+	margin: 15px 0;
+	transition-duration: 3s;
+}
+#website-owner:hover {
+	color: aqua;
+	transform: rotate(360deg);
+	cursor: pointer;
+}
+#side-nav {
+	margin-top: 10px;
+}
+#side-nav ul {
+	list-style: none;
+}
+#side-nav li {
+	padding: 15px 10px;
+	transition-duration: 1s;
+	position: relative;
+}
+#side-nav a {
+	text-decoration: none;
+	color: #999999;
+	font-size: 16px;
+	display: block;
+	transition: 0.5s;
+}
+#side-nav li:hover{
+	background-color: #a53d3e;
+	transition: background 0.5s ease-in;
+	padding-left: 0;
+	padding-right: 0;
+}
+#side-nav>ul>li:hover a {
+	color: #ffffff;
+}
+#side-nav ul ul
+{
+	background:rgba(0,0,0,0.1);
+  	transition: max-height 0.3s ease-out;
+  	max-height:0;
+  	overflow:hidden;
+}
+#side-nav li:hover > ul
+{
+	max-height:500px;
+  	transition: max-height 0.95s ease-in;
+}
+#side-nav ul ul li:hover
+{
+	background-color: #999999;
+}
+#side-nav li:hover .dropdown-content
+{
+	margin-top: 10px;
+}
+#footer-link {
+	margin-top: 10px;
+	bottom: 0;
+	font-size: 30px;
+	transition-duration: 1s;
+}
+#footer-link a {
+	text-decoration: none;
+	color: #999999;
+	transition-duration: 1s;
+}
+#footer-link a:hover {
+	color: #a53d3e;
+	transform: rotate(360deg);
+	display: inline-block;
+}
+/************************************ main content section ***********************/
+#main-content {
+	float: right;
+	height: 100px;
+	width: 80%;
+	color: #000000;
+	background-image: url("Images/gradientTry.jpeg");
+}
+.custom-fieldset {
+	padding: 30px;
+	font-size: 18px;
+}
+.custom-fieldset-div {
+	padding: 20px 0;
+}
+.form-control {
+	margin: 10px 0;
+}
+.form-label {
+	font-size: 24px;
+}
+.form-textbox {
+	background-image: url("Images/gradientTry.jpeg");
+	padding: 10px 20px;
+	background-color: #c79c80;
+	border-width: 0;
+	color: #fff;
+	opacity: 0.8;
+}
+.form-btn {
+	padding: 15px 30px;
+	border-style: none;
+	font-weight: bolder;
+	font-size: 16px;
+	background-color: #5c473f;
+	color: #999999;
+	transition-duration: 1s;
+}
+.form-btn:hover {
+	border-radius: 20px 0;
+}
+.form-btn:hover {
+	color: #fff;
+	cursor: pointer;
+}
+.form-control {
+	overflow-x: auto;
+}
+.form-select
+{
+	background-image: url("Images/gradientTry.jpeg");
+	padding: 10px 20px;
+	background-color: #c79c80;
+	border-width: 0;
+	color: #000000;
+	opacity: 0.8;
+}
+.form-control-bg-white
+{
+	background-image: none;
+	background-color: #ffffff!important;
+	color: #000000;
+}
+.empty-section {
+	background-image: url("Images/gradientTry.jpeg");
+	padding: 50px;
+}
+.custom-table-div {
+	overflow-x: auto;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+	color: #000000;
+}
+tr:nth-child(odd) {
+	background-color: #cccccc;
+	color: #000000;
+}
+th {
+	background-color: #5E4142;
+}
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+/************************************* index page section *****************************/
+.welcome-section {
+	background-image: url("Images/introBackground.jpg");
+	background-size: cover;
+	color: #e6e5de;
+}
+.overview-section {
+	background-image: url("Images/overviewBackground.jpg");
+	background-size: cover;
+}
+.subscribe-section {
+	padding: 20px 0;
+	background-image: url("Images/subscribeBackground.jpg");
+	background-size: cover;
+}
+/************************************* history page section *****************************/
+.historyofthetrust-section {
+	background-image: url("Images/historyofthetrust.jpg");
+	background-size: cover;
+	color: #fff;
+}
+.historyofthecampaign-section {
+	background-image: url("Images/historyofthecampaign.jpg");
+	background-size: cover;
+}
+.mission-section {
+	background-image: url("Images/ourMissionBackground.jpg");
+	background-size: cover;
+}
+#caption-left-div {
+	float: left;
+	width: 30%;
+	margin-right: 5px;
+	margin-left: -5px;
+	box-sizing: border-box;
+}
+#image-right-div {
+	float: right;
+	width: 70%;
+	margin-left: 5px;
+	margin-right: -5px;
+	box-sizing: border-box;
+}
+/************************************* community page section *****************************/
+.login-section {
+	background-image: url("Images/loginBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.login-section a {
+	color: #fff;
+}
+.comment-section {
+	background-image: url("Images/commentBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.comment-div {
+	padding: 0 6px;
+}
+.left-comment {
+	float: left;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.mid-comment {
+	float: left;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.right-comment {
+	float: left;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.comment-div>h3 {
+	margin-top: 10px;
+}
+.communitymember-section {
+	background-image: url("Images/communityBackground.jpg");
+	background-size: cover;
+}
+/*********************************** about page section ***********************************/
+.aboutDetail-section {
+	background-image: url("Images/aboutDetailBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.aboutDetail-section>.container
+{
+	background-color: #000;
+	opacity: 0.8;
+}
+.about-content {
+	margin: 15px 0 5px;
+}
+.imageDetail-section {
+	background-color: #e4c4c9;
+	background-size: cover;
+}
+.image-row {
+	padding: 10px 0;
+}
+.image-left, .image-mid, .image-right {
+	float: left;
+	width: 33.33%;
+}
+.image-left {
+	margin-left: -5px;
+}
+.image-mid {
+	margin: 0 5px;
+}
+.image-right {
+	margin-right: -5px;
+}
+.importance-section
+{
+	background-image: url("Images/importanceBackground.jpg");
+	background-size: cover;
+	color: #FFFFFF;
+}
+.importance-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+/*********************************** visitor page section ***********************************/
+.visitorIntro-section
+{
+	background-image: url("Images/visitorIntroBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.visitorIntro-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+.visitorArrange-section
+{
+	background-image: url("Images/visitorArrangeBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.visitorArrange-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+.visitorSurvey-section
+{
+	background-image: url("Images/visitorSurveyBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.visitorSurvey-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+.visitorSurvey-section .form-select
+{
+	width: 100%;
+}
+/*********************************** adopt an animal page section ***********************************/
+.adoptGallery-section
+{
+	background-image: url("Images/adoptGalleryBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.adoptGallery-section .image-row a
+{
+	background-color: #ccc;
+	padding: 3px;
+	color: #000000;
+}
+/*********************************** getInvolved page section ***********************************/
+.getInvolvedIntro-section
+{
+	background-image: url("Images/adoptIntroBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.getInvolvedIntro-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+.getInvolvedSubscribe-section
+{
+	background-image: url("Images/getInvolvedSubscribe.jpg");
+	background-size: cover;
+}
+.donation-section
+{
+	background-image: url("Images/donationBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.donation-section>.container
+{
+	background-color: #000000;
+	opacity: 0.7;
+}
+/*********************************** education page section ***********************************/
+.educationIntro-section
+{
+	background-image: url("Images/educationIntroBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.educationIntro-section>.container
+{
+	background-color: #000000;
+	opacity: 0.6;
+}
+.awareness-section
+{
+	background-image: url("Images/awarenessBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.awareness-section>.container
+{
+	background-color: #000000;
+	opacity: 0.6;
+}
+.engagement-section
+{
+	background-image: url("Images/engagementBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.engagement-section>.container
+{
+	background-color: #000000;
+	opacity: 0.6;
+}
+.advocacy-section
+{
+	background-image: url("Images/advocacyBackground.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+.advocacy-section>.container
+{
+	background-color: #000000;
+	opacity: 0.6;
+}
+/*********************************** timeline page section ***********************************/
+.timeline-section
+{
+	background-image: url("Images/historyofthecampaign.jpg");
+	background-size: cover;
+}
+/*********************************** footer section ***********************************/
+footer {
+	background-image: url("Images/gradientTry.jpeg");
+	padding: 30px 10px;
+	color: #999999;
+	font-size: 22px;
+}
+.footer-pts ul {
+	list-style: none;
+}
+.footer-pts li {
+	float: left;
+	padding: 0 5px;
+}
+footer a {
+	text-decoration: underline;
+	color: #999999;
+}
+.footer-pts>ul>li>a:hover {
+	color: #9E8080;
+}
+.designer-info-footer {
+	float: right;
+}
+
+/*********************************** media query ******************************/
+@media(min-width:1025px) and (max-width: 1366px) {
+#side-nav li {
+	padding: 12px 4px;
+}
+#side-nav a {
+	font-size: 14px;
+}
+}
+
+@media(min-width:768px) and (max-width:1025px) {
+#side-nav li {
+	padding: 9px 5px;
+}
+#side-nav a {
+	font-size: 14px;
+}
+}
+
+@media(min-width:425px) and (max-width: 768px) {
+#side-nav li {
+	padding: 7px 5px;
+}
+#side-nav a {
+	font-size: 12px;
+}
+}
+
+@media(min-width:375px) and (max-width: 425px) {
+#side-nav li {
+	padding: 2px 5px;
+}
+#side-nav a {
+	font-size: 12px;
+}
+}
+
+@media(max-width:744px) {
+footer {
+	font-size: 18px;
+}
+.footer-pts li {
+	float: none;
+	padding: 0 3px;
+}
+.designer-info-footer {
+	float: none;
+}
+}
+
+@media(max-width:487px) {
+.fab {
+	font-size: 20px;
+}
+}
+
+@media(max-width:600px) {
+h1 {
+	font-size: 20px;
+}
+h2, h3 {
+	font-size: 13px;
+}
+h4, h5 {
+	font-size: 10px;
+}
+p {
+	font-size: 12px;
+}
+.fieldset-legend {
+	font-size: 20px;
+}
+.fieldset-paragraph, li {
+	font-size: 12px;
+}
+.hide-list {
+	font-size: 8px;
+}
+#website-owner, #content-logo, hr {
+	display: none;
+}
+}
+
+@media(max-width:374px) {
+.form-textbox {
+	font-size: 10px;
+}
+.form-select
+{
+	font-size: 10px;	
+}
+.form-section fieldset {
+	padding: 2px;
+}
+.form-btn {
+	padding: 5px;
+	font-size: 10px;
+}
+#side-nav li {
+	padding: 12px 4px;
+}
+a, label {
+	font-size: 8px!important;
+}
+}
+
+@media(max-width: 500px) {
+#caption-left-div {
+	float: none;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+}
+#image-right-div {
+	float: none;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+.comment-div {
+	float: none!important;
+	width: 100%;
+}
+.image-left, .image-mid, .image-right {
+	float: none;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+}

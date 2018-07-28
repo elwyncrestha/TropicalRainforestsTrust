@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="elvinshrestha">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visitor Information - Tropical Rainforests Trust</title>
+
+	<!-- shortcut icon -->
+	<link rel="shortcut icon" href="Images/shortcutIcon.ico" />
+
+	<!-- font awesome -->
+	<link type="text/css" rel="stylesheet" href="Files/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" />
+
+	<!-- My Custom Stylesheet -->
+	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+	<div class="vertical-nav">
+		<div id="content-logo"> <img src="Images/logo.png" alt="logo"></div><!-- content-logo close -->
+	  
+	  	<hr />
+	  	<h1 id="website-owner" class="text-center">Tropical Rainforests Trust</h1>
+	  	<hr />
+	  	<div id="side-nav">
+			<ul>
+			  <li><a href="index.html" accesskey="H"><i class="fas fa-home"></i> <span class="hide-list">Home Page</span></a></li>
+			  <li><a><i class="fas fa-history"></i> <span class="hide-list">History</span></a>
+			  	<ul class="dropdown-content">
+			  		<li><a href="history.html" accesskey="B"><i class="fas fa-clock"></i> <span class="hide-list"></span> Brief Description</a></li>
+					<li><a href="timeline.html" accesskey="T"><i class="fas fa-calendar-alt"></i> <span class="hide-list"></span> Timeline</a></li>
+			  	</ul><!-- dropdown close -->
+			  </li>
+			  <li><a href="education.html" accesskey="L"><i class="fas fa-book-open"></i> <span class="hide-list">Education</span></a></li>
+			  <li><a href="community.html" accesskey="C"><i class="fas fa-users"></i> <span class="hide-list">Community</span></a></li>
+			  <li><a href="about.html" accesskey="Q"><i class="fas fa-tree"></i> <span class="hide-list">About Rainforests</span></a></li>
+			  <li class="nav-li-active"><a href="visitor.html" accesskey="V"><i class="fas fa-user"></i> <span class="hide-list">Visitor Information</span></a></li>
+			  <li><a href="getInvolved.html" accesskey="G"><i class="fas fa-envelope"></i> <span class="hide-list">Get Involved</span></a></li>
+			  <li><a href="adopt.html" accesskey="A"><i class="fas fa-paw"></i> <span class="hide-list">Adopt an animal</span></a></li>
+			</ul>
+	  	</div><!-- side-nav close-->
+	  	<hr />
+	  	<div id="footer-link" class="text-center">
+			<a href=""><i class="fab fa-github-square"></i></a>
+			<a href=""><i class="fab fa-facebook-square"></i></a>
+			<a href=""><i class="fab fa-linkedin"></i></a>
+		</div><!-- footer-link close-->
+	</div><!-- vertical-nav close -->
+	
+	<div id="main-content">
+  		<div class="visitorIntro-section text-center custom-fieldset-div">
+			<div class="container">
+		  		<fieldset class="custom-fieldset">
+					<legend><h1 class="fieldset-legend">Hello Visitors</h1></legend>
+					<p class="fieldset-paragraph text-justify">
+						To the newcomers, this page will guide you to arrange your trip to the Amazon rainforest.
+					</p>
+					<br />
+					<p class="fieldset-paragraph text-justify">
+						Also, to all the visitors, thank you for visiting. Your presence at Amazon Rainforests was such a blessing. I know you traveled far to make it to here, and I really appreciate you coming to support and help the campaign.
+						Please complete this survey in order to provide us some basic information so that we can improve our facilitation. We have included a form in another section.
+					</p>
+		  		</fieldset>
+			</div><!-- container close --> 
+	  	</div><!-- visitorIntro-section close-->
+
+  	<div class="empty-section"></div><!-- empty section close -->
+	  
+  	<div class="visitorArrange-section text-center custom-fieldset-div form-section">
+		<div class="container">
+	  		<fieldset class="custom-fieldset">
+				<legend><h1 class="fieldset-legend">Arrange your trip</h1></legend>
+				
+				<h3>Choose appropriate available plan for your trip</h3>
+				<hr />
+				<form method="post">
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">Enter your email address:</label>
+					</div>
+					<div class="form-control">
+						<input type="text" placeholder="example@gmail.com" class="form-textbox form-control-bg-white" name="email">
+					</div>
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">Choose duration:</label>
+					</div>
+					<div class="form-control">
+						<select name="duration" class="form-select form-control-bg-white">
+							<optgroup label="Weeks">
+								<option value="2 Weeks">2 Weeks</option>
+								<option value="3 Weeks">3 Weeks</option>
+							</optgroup>
+							<optgroup label="Months">
+								<option value="1 Month">1 Month</option>
+								<option value="2 Month">2 Month</option>
+								<option value="3 Month">3 Month</option>
+								<option value="4 Month">4 Month</option>
+							</optgroup>
+						</select>
+					</div>
+					<input type="submit" class="form-btn" value="Subscribe">
+				</form>
+
+	  		</fieldset>
+		</div><!-- container close -->
+  	</div><!-- visitorArrange-section close-->
+  
+
+	<div class="empty-section"></div><!-- empty section close -->
+	
+	<div class="visitorSurvey-section text-center custom-fieldset-div">
+		<div class="container">
+	  		<fieldset class="custom-fieldset">
+				<legend><h1 class="fieldset-legend">Survey</h1></legend>
+				
+				<h3>Provide correct information from your trip</h3>
+				<hr />
+				<form method="post" class="text-left">
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph" for="select-option">1. Choose tour duration:</label>
+					</div>
+					<div class="form-control">
+						<select name="duration" class="form-select form-control-bg-white" id="select-option">
+							<optgroup label="Weeks">
+								<option value="2 Weeks">2 Weeks</option>
+								<option value="3 Weeks">3 Weeks</option>
+							</optgroup>
+							<optgroup label="Months">
+								<option value="1 Month">1 Month</option>
+								<option value="2 Month">2 Month</option>
+								<option value="3 Month">3 Month</option>
+								<option value="4 Month">4 Month</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">2. Are you satisfied with the visit duration ?</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="isDurationSatisfied" value="Yes"><label>&nbsp;Yes&nbsp;</label>
+						<input type="radio" name="isDurationSatisfied" value="No"><label>&nbsp;No&nbsp;</label>
+					</div>
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">3. Choose visit rating: (1 - low, 5 - high)</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="isVisitSatisfied" value="1"><label>&nbsp;1&nbsp;</label>
+						<input type="radio" name="isVisitSatisfied" value="2"><label>&nbsp;2&nbsp;</label>
+						<input type="radio" name="isVisitSatisfied" value="3"><label>&nbsp;3&nbsp;</label>
+						<input type="radio" name="isVisitSatisfied" value="4"><label>&nbsp;4&nbsp;</label>
+						<input type="radio" name="isVisitSatisfied" value="5"><label>&nbsp;5&nbsp;</label>
+					</div>
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">4. Will you recommend others to visit?</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="recommendVisit" value="Never"><label>&nbsp;Never&nbsp;</label>
+						<input type="radio" name="recommendVisit" value="LessLikely"><label>&nbsp;Less likely&nbsp;</label>
+						<input type="radio" name="recommendVisit" value="MayBe"><label>&nbsp;May be&nbsp;</label>
+						<input type="radio" name="recommendVisit" value="Ofcourse"><label>&nbsp;Yes, ofcourse&nbsp;</label>
+					</div>
+					<div class="form-control">
+						<label class="form-label fieldset-paragraph">5. Will you visit again?</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="visitAgain" value="Yes"><label>&nbsp;Yes&nbsp;</label>
+						<input type="radio" name="visitAgain" value="No"><label>&nbsp;No&nbsp;</label>
+					</div>
+					<input type="submit" class="form-btn" value="Send">
+				</form>
+	  		</fieldset>
+		</div><!-- container close -->
+  	</div><!-- visitorSurvey-section close-->
+
+	<footer class="text-center">
+	<div class="footer-pts">
+  		<ul>
+			<li><a href="">Privacy</a></li>
+			<li><a href="">Terms & Conditions</a></li>
+  		</ul>
+	</div><!-- copyright div close -->
+
+	<div class="designer-info-footer">
+  		<label><a href="">Elvin Shrestha</a> &copy; Copyright 2018</label>
+	</div><!-- year div close -->
+	
+	<div class="clear"></div><!-- clear close --> 
+	
+</footer><!-- footer close --> 
+</div><!-- main-content close -->
+
+<div class="clear"></div><!-- clear close -->
+</body>
+</html>
